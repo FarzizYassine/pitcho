@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>pitcho</title>
+    <link rel="shortcut icon" type="image/x-icon" href= "logo.png">
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+         body{
+            min-height: 100vh;
+            position: relative;
+            width: 100%;
+            background-attachment: fixed;
+            animation: anim 20s linear infinite;
+            backdrop-filter: blur(3px);
+            background-image: url(ford.jpg);
+         }
+         @keyframes anim {
+            0%{
+                background-image: url(ford.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            25%{
+                background-image: url(first.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            50%{
+                background-image: url(seconde.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            75%{
+                background-image: url(third.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            100%{
+                background-image: url(quatre.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+         }
+         #main{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+
+         }
+         #main img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+         }
+         #main h1{
+            color: red;
+            padding-top: 20px;
+         }
+         #choix{
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 50px;
+         }
+         #choix button{
+            width: 150px;
+            height: 50px;
+            border-radius: 15px;
+            border: solid 1px red;
+            background-color: red;
+            color: black;
+            cursor: pointer;
+            transition-duration: 0.5s;
+         }
+         #choix button:hover {
+            background-color: transparent;
+            color: black;
+            cursor: pointer;
+            transition-duration: 0.5s;
+         }
+             ::-webkit-scrollbar{
+                display: none;
+             }
+    </style>
+    <body>
+        <div id="main">
+        <img src="logo.png" alt="">
+        <h1>“Money may not buy happiness, but I'd rather cry in a Jaguar than on a bus.”</h1>
+        </div>
+        <div id="choix">
+            <button>
+             Admin
+            </button>
+            <button>
+             guest
+            </button>
+            <button>
+               user
+            </button>
+        </div>
+    </body>
+</html>
